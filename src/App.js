@@ -31,7 +31,7 @@ function App() {
           <Route path='/login' element={ <Login /> } />
           <Route path='/context/' element={ <Protected Component={ConText} />}>
 
-              <Route path='company' element={ <ComPanY />}/>
+              <Route path='company' element={ <ComPanY />} state="Jay Shreee Ram " />
               <Route path='otherpage' element={ <OtherPage />}/>
               <Route path='chenal' element={ <CheNal />}/>
             </Route >

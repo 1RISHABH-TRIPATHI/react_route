@@ -7,12 +7,7 @@ function Login() {
         Navi('/');
     }
     const Navi=useNavigate();
-    // useEffect(()=>{
-    //     let login=localStorage.getItem('login');
-    //     if(login){
-    //             Navi('/')
-    //     }
-    // })
+   
   return (
     <div>
         <h2>
