@@ -32,16 +32,12 @@ function DeTail() {
 export default DeTail
 
 export const LOaDer = async ({params})=>{
-    
+    try {
         console.log('Call Loader Fuction ');
-        const  data= await fetch(`https://fakest8oreapi.com/products/${params.id}`);
-        if(!data.ok)
-        {
-           return {
-                status:data.status,
-                statusText: data.statusText
-           }
-        }
-        else
+        const  data= await fetch(`https://fakestoreapi.com/products/${params.id}`);
         return await data.json();
+    } catch (error) {
+        console.log("Error Generated-: "+error);
+
+    }
 }
