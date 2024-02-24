@@ -1,16 +1,13 @@
 
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import DataUse from './component2/process/dataUse';
+import DataKLoad from './component2/router/dataload';
 
 
 function App() {
   return (
     <div className="App">
-       
-       <BrowserRouter>
-        <DataUse />
-       </BrowserRouter>
+       <DataKLoad />
     </div>
   );
 }
